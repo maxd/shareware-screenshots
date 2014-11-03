@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+$: << File.expand_path('../..', __FILE__)
+
+require 'bundler/setup'
+require 'thor'
+require 'lib/screenshot_manager'
+
+class CLI < Thor
+
+  desc 'screenshots', 'Capture screenshots'
+  def screenshots
+    ScreenshotManager.new.run
+  end
+
+end
+
+CLI.start(ARGV)

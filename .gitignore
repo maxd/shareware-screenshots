@@ -1,0 +1,9 @@
+.DS_Store
+
+### Ruby template
+/tmp/
+/shareware-screenshots/
+
+## Environment normalisation:
+/.bundle/
+
